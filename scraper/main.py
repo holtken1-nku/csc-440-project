@@ -1,7 +1,6 @@
 from env.constants import API_TOKEN
-from src.extract import get_competition_data
-# from src.load import load_competition
-import json
+from src.extract import get_competition
+from src.load import load_competition
 
 
 def main():
@@ -17,9 +16,16 @@ def main():
     #   SA  - Italian Serie A
 
     competition_code = "PL"
-    competition_dict = get_competition_data(API_TOKEN, competition_code)
 
-    print(json.dumps(competition_dict, indent=2))
+    # Supported subresource codes:
+    #   MTL  - Match list
+    #   STN  - Standings
+    #   TML  - Team list
+
+    subresource_code = "MTL"
+
+    competition_dict = get_competition(API_TOKEN, competition_code, subresource_code)
+    load_competition(competition_dict, competition_code, subresource_code)
 
 
 if __name__ == "__main__":
