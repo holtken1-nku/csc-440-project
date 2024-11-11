@@ -3,14 +3,14 @@ import json
 import requests
 
 
-def get_competition_data(auth_key, comp_code, subresource=""):
+def get_competition(auth_key, comp_code, sub_code):
     uri = f"{BASE_URI}/competitions/{comp_code}"
 
-    if subresource == "matches":
+    if sub_code == "MTL":
         uri += "/matches"
-    elif subresource == "standings":
+    elif sub_code == "STN":
         uri += "/standings"
-    elif subresource == "teams":
+    elif sub_code == "TML":
         uri += "/teams"
 
     headers = {"X-Auth-Token": auth_key}
