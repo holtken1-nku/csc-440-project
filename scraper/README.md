@@ -24,11 +24,13 @@
     env/constants.py and add this file to .gitignore.
 
     Run main.py to manually populate the database with current settings.
-    If you prefer to run the script on a scheduled basis via crontab or
-    a similar tool, ensure that extractions do not exceed the rate limit
-    (10 calls/minute).  Additionally, certain measures have been taken to
-    prevent duplicate entries in collection tables, but such measures are
-    only applicable to MongoDB.
+    Update "competition_code" and "subresource_code" to modify the source
+    and formatting of the collected data.  If you prefer to run the script
+    on a scheduled basis via crontab or a similar tool, ensure that
+    extractions do not exceed the rate limit (10 calls/minute). Further,
+    certain measures have been taken to prevent duplicate entries in the
+    collection tables, but such measures are only applicable to MongoDB
+    and should not be treated as infallible.
 
     Data is stored in MongoDB by default via src/load.py, however the
     output component can be modified to accomodate any JSON-compatible
@@ -68,3 +70,4 @@
 
 #### CONTACT
     Noah Holtke (holtken1@mymail.nku.edu).
+    
