@@ -1,0 +1,19 @@
+The main goals of the backend for our web app are to store the scraped data, update the data ocassionaly, and
+to allow this data to be globally accessible.
+
+Our backend is set up using to main tools, Django and Ngrok. Django is a python library that
+allows creation of objects in a way that allows sql/python class conversion (As Django objects are created,
+they are automatically added to an sql server). Different views can be set up for these objects 
+but one method is to use the Django rest framework. This is the format we use and the frontend will ultimately
+access the formatted/cleaned data from the Django server and be able to access the data using the rest format. We use
+views with assigned paths to further allow seperation of data. By itself a Django server only runs locally on a 
+specific port. (The command to start the Django server is in a .txt file within this same folder) To allow a Django 
+server to be accessed globally one working free solution that we found as we don't assume super high traffic 
+is an Ngrok tunnel. Ngrok tunnels were a good fit for our project due to their low setup requirement. Once Ngrok is 
+installed on your system, you sign in, and you acquire your one free domain url eg 
+(https://ethical-guppy-specially.ngrok-free.app) the system you would start the tunnel(command to start tunnel in file
+within this folder). You should now be able to access on any device any of the paths described in fdbAPI/urls.py.
+The frontend will be set up to display data received from accessing these urls
+
+Ultimately we plan to have django and ngrok running continuously on a device which will allow for the frontend
+to continuously access data from the backend.

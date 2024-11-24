@@ -1,0 +1,4 @@
+ngrok http --url=ethical-guppy-specially.ngrok-free.app 8000
+
+
+# url will be different if hosted using different ngrok account
