@@ -1,0 +1,80 @@
+[
+  {
+    "id": 2000,
+    "areaOfCompetition": "World",
+    "name": "FIFA World Cup",
+    "code": "WC"
+  },
+  {
+    "id": 2001,
+    "areaOfCompetition": "Europe",
+    "name": "UEFA Champions League",
+    "code": "CL"
+  },
+  {
+    "id": 2002,
+    "areaOfCompetition": "Germany",
+    "name": "Bundesliga",
+    "code": "BL1"
+  },
+  {
+    "id": 2003,
+    "areaOfCompetition": "Netherlands",
+    "name": "Eredivisie",
+    "code": "DED"
+  },
+  {
+    "id": 2013,
+    "areaOfCompetition": "Brazil",
+    "name": "Campeonato Brasileiro Série A",
+    "code": "BSA"
+  },
+  {
+    "id": 2014,
+    "areaOfCompetition": "Spain",
+    "name": "Primera Division",
+    "code": "PD"
+  },
+  {
+    "id": 2015,
+    "areaOfCompetition": "France",
+    "name": "Ligue 1",
+    "code": "FL1"
+  },
+  {
+    "id": 2016,
+    "areaOfCompetition": "England",
+    "name": "Championship",
+    "code": "ELC"
+  },
+  {
+    "id": 2017,
+    "areaOfCompetition": "Portugal",
+    "name": "Primeira Liga",
+    "code": "PPL"
+  },
+  {
+    "id": 2018,
+    "areaOfCompetition": "Europe",
+    "name": "European Championship",
+    "code": "EC"
+  },
+  {
+    "id": 2019,
+    "areaOfCompetition": "Italy",
+    "name": "Serie A",
+    "code": "SA"
+  },
+  {
+    "id": 2021,
+    "areaOfCompetition": "England",
+    "name": "Premier League",
+    "code": "PL"
+  },
+  {
+    "id": 2152,
+    "areaOfCompetition": "South America",
+    "name": "Copa Libertadores",
+    "code": "CLI"
+  }
+]
