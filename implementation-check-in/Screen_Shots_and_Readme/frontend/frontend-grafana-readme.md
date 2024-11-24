@@ -1,3 +1,5 @@
+A preview is available here: https://snapshots.raintank.io/dashboard/snapshot/ycHFgZL83M18YKTzVjotJIZCjufy3liU
+
 # Steps to "compile"
 
 1. Setup a web server to serve the json files in the DATA folder.
